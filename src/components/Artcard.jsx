@@ -6,12 +6,15 @@ const ArtCards = ({ data }) => {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
       {data.map((item) => (
         <Link key={item.id} to={`/product/${item.id}`}>
-          <div className="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105">
-            <img src={item.thumbnail} alt={item.name} className="w-full h-full object-cover object-center" />
+          <div className="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105 h-72">
+            {/* <img src={item.thumbnail} alt={item.name} className="w-full h-full object-cover" /> */}
+            <div className="w-full h-48">
+              <img src={item.thumbnail} alt={item.name} className="w-full h-full object-cover" />
+            </div>
             <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
-              <p className="text-gray-600 font-boldmb-2">CREATOR: {item.creator.name}</p>
-              <p className="text-gray-800 font-semibold">👍{item.like_count}</p>
+              <h3 className="text-xl font-semibold mb-2 truncate">{item.name}</h3>
+              <p className="text-gray-600 font-boldmb-2 truncate">CREATOR: {item.creator.name}</p>
+              <p className="text-gray-800 font-semibold">❤️{item.like_count}</p>
             </div>
           </div>
         </Link>

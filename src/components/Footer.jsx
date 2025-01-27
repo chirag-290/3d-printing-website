@@ -42,7 +42,7 @@ const Footer = () => {
                   className="w-16 h-auto mr-2"
                 />
               </Link> */}
-              <span className="text-3xl font-bold">3DPRINT MARKETPLACE</span>
+              <span className="text-3xl font-bold">ShapeMakers</span>
             </div>
             <div className="text-gray-400">
               <span>Copyright © 2024 Your Company</span>

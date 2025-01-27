@@ -27,10 +27,7 @@ const Product = ({ product, categoryName }) => {
   } = product;
 
   const handleBuyNow = () => {
-    // Construct the download URL
     const downloadUrl = `https://api.thingiverse.com/files/${id}/download?access_token=ddbcb3d302545f30df1bfa1d5d56107d`;
-    
-    // Trigger the download
     window.open(downloadUrl, '_blank');
   };
 
@@ -63,7 +60,7 @@ const Product = ({ product, categoryName }) => {
             </p>
 
             <button onClick={handleBuyNow} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-              Buy Now
+              View
             </button>
           </div>
         </div>

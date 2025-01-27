@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const images = [
-  'https://f.hubspotusercontent10.net/hubfs/2699713/3D-Printer-Banner.png',
-  'https://inlanddigital.com.au/wp-content/uploads/2016/12/banner-3d-printing.jpg',
-  'https://i.ytimg.com/vi/O1xvCZ_y6l8/maxresdefault.jpg',
+  'https://plus.unsplash.com/premium_photo-1714859729164-5e5b6af0db28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8M2QlMjBwcmludGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+  'https://plus.unsplash.com/premium_photo-1715876679877-079db51d1d6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8M2QlMjBwcmludGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+  'https://plus.unsplash.com/premium_photo-1715033132422-023b77e191c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fDNkJTIwcHJpbnRpbmd8ZW58MHx8MHx8fDA%3D',
 
 ];
 
@@ -34,7 +34,7 @@ const Hero = () => {
 
   return (
     <div
-      className='relative bg-cover bg-center h-96 flex items-center justify-center'
+      className='relative bg-cover bg-center h-96 flex items-center justify-center image-container'
       style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     >
       <button
